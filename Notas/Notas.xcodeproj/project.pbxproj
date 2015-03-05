@@ -14,6 +14,7 @@
 		A0D276E31AA8E3D1007E7DAC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0D276E21AA8E3D1007E7DAC /* Images.xcassets */; };
 		A0D276E61AA8E3D1007E7DAC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0D276E41AA8E3D1007E7DAC /* LaunchScreen.xib */; };
 		A0D276F21AA8E3D1007E7DAC /* NotasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D276F11AA8E3D1007E7DAC /* NotasTests.m */; };
+		A0D276FD1AA8E965007E7DAC /* MyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D276FC1AA8E965007E7DAC /* MyTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		A0D276EB1AA8E3D1007E7DAC /* NotasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D276F01AA8E3D1007E7DAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0D276F11AA8E3D1007E7DAC /* NotasTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotasTests.m; sourceTree = "<group>"; };
+		A0D276FB1AA8E965007E7DAC /* MyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabBarController.h; sourceTree = "<group>"; };
+		A0D276FC1AA8E965007E7DAC /* MyTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				A0D276E21AA8E3D1007E7DAC /* Images.xcassets */,
 				A0D276E41AA8E3D1007E7DAC /* LaunchScreen.xib */,
 				A0D276D51AA8E3D1007E7DAC /* Supporting Files */,
+				A0D276FB1AA8E965007E7DAC /* MyTabBarController.h */,
+				A0D276FC1AA8E965007E7DAC /* MyTabBarController.m */,
 			);
 			path = Notas;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0D276DE1AA8E3D1007E7DAC /* ViewController.m in Sources */,
+				A0D276FD1AA8E965007E7DAC /* MyTabBarController.m in Sources */,
 				A0D276DB1AA8E3D1007E7DAC /* AppDelegate.m in Sources */,
 				A0D276D81AA8E3D1007E7DAC /* main.m in Sources */,
 			);
