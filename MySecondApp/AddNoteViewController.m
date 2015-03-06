@@ -51,8 +51,12 @@
         self.txtName.text = @"";
         self.descTextView.text = @"";
         
-        
+        [self dismissViewControllerAnimated:YES completion:nil];
     }
+    
+    
+    
+    
     
 }
 
