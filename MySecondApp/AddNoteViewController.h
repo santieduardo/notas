@@ -9,8 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "ViewController.h"
 
-@interface AddPersonViewController : UIViewController
+@interface AddNoteViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *txtName;
-@property (weak, nonatomic) IBOutlet UILabel *lblSucess;
+
+@property (weak, nonatomic) IBOutlet UISegmentedControl *categorySegmentedControl;
+@property (weak, nonatomic) IBOutlet UITextView *descTextView;
+@property (weak, nonatomic) IBOutlet UIButton *statusButton;
 
 @end

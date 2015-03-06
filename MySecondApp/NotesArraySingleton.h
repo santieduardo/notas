@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface PeopleArraySingleton : NSObject
+@interface NotesArraySingleton : NSObject
 
 + (NSMutableArray *)array;
 @end

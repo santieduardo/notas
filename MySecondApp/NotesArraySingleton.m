@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 macmanu. All rights reserved.
 //
 
-#import "PeopleArraySingleton.h"
+#import "NotesArraySingleton.h"
 #import "Note.h"
 
-@implementation PeopleArraySingleton
+@implementation NotesArraySingleton
 
 static NSMutableArray *array;
 

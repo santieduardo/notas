@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "PeopleArraySingleton.h"
+#import "NotesArraySingleton.h"
 #import "Note.h"
 
 @interface ViewController ()
@@ -16,31 +16,32 @@
 
 @implementation ViewController
 {
-    NSMutableArray *people;
+    NSMutableArray *notes;
 
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    people = [PeopleArraySingleton array];
-   }
+    notes = [NotesArraySingleton array];
+}
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 -(void)viewDidAppear:(BOOL)animated
 {
-    NSUInteger count = people.count;
-   _lblName.text =		[NSString  stringWithFormat:@"%lu", (unsigned long) count];
+    //perde o indice, ver melhor implementação
     [self.tablePeople reloadData];
     
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [people count];
+    return [notes count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -55,7 +56,7 @@
     
     
     UILabel *label = (UILabel *)[cell viewWithTag:10];
-    Note *note = [people objectAtIndex:indexPath.row];
+    Note *note = [notes objectAtIndex:indexPath.row];
     label.text = note.title;
     cell.imageView.image = [UIImage imageNamed:@"appIcon.jpg"];
     
@@ -69,7 +70,7 @@
 
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    [people removeObjectAtIndex:indexPath.row];
+    [notes removeObjectAtIndex:indexPath.row];
     [tableView reloadData];
     
     

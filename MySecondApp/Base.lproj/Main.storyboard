@@ -21,7 +21,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="15" y="237" width="370" height="43.5"/>
+                                    <rect key="frame" x="15" y="237" width="370" height="44"/>
                                 </variation>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="98J-hf-QME">
@@ -85,7 +85,7 @@
         <!--New Reminder-->
         <scene sceneID="cPj-79-s4R">
             <objects>
-                <viewController id="G1M-nz-B1z" customClass="AddPersonViewController" sceneMemberID="viewController">
+                <viewController id="G1M-nz-B1z" customClass="AddNoteViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="v79-qs-hX4"/>
                         <viewControllerLayoutGuide type="bottom" id="Dmc-CC-rLl"/>
@@ -113,16 +113,6 @@
                                     <rect key="frame" x="338" y="131" width="32" height="30"/>
                                 </variation>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aez-65-mVB">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" red="1" green="0.9654108806791698" blue="0.89867827055576111" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="textColor" red="0.72366240530303028" green="0.70024333635874558" blue="0.64897661027812259" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="43" y="332" width="287" height="177"/>
-                                </variation>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcL-4l-sAq">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -144,24 +134,34 @@
                                     <rect key="frame" x="43" y="236" width="287" height="29"/>
                                 </variation>
                             </segmentedControl>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aez-65-mVB">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.9654108806791698" blue="0.89867827055576111" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.72366240530303028" green="0.70024333635874558" blue="0.64897661027812259" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="43" y="333" width="287" height="177"/>
+                                </variation>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="VQL-uN-eD0"/>
                                 <exclude reference="TZJ-vl-9DX"/>
-                                <exclude reference="aez-65-mVB"/>
                                 <exclude reference="tcL-4l-sAq"/>
                                 <exclude reference="GUh-9f-xxa"/>
+                                <exclude reference="aez-65-mVB"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="VQL-uN-eD0"/>
                                 <include reference="TZJ-vl-9DX"/>
-                                <include reference="aez-65-mVB"/>
                                 <include reference="tcL-4l-sAq"/>
                                 <include reference="GUh-9f-xxa"/>
+                                <include reference="aez-65-mVB"/>
                             </mask>
                         </variation>
                     </view>
@@ -169,11 +169,14 @@
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="4ho-0N-dBX">
                             <color key="tintColor" red="0.57999921085858586" green="0.561229351588309" blue="0.52014021879355876" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <action selector="addPersonDone:" destination="G1M-nz-B1z" id="nUM-h1-hmP"/>
+                                <action selector="addNoteDone:" destination="G1M-nz-B1z" id="Anq-5A-hxB"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="categorySegmentedControl" destination="GUh-9f-xxa" id="Ues-qT-rDR"/>
+                        <outlet property="descTextView" destination="aez-65-mVB" id="BZQ-gb-G7Q"/>
+                        <outlet property="statusButton" destination="TZJ-vl-9DX" id="jXs-RX-6wd"/>
                         <outlet property="txtName" destination="VQL-uN-eD0" id="HJb-6u-hkk"/>
                     </connections>
                 </viewController>
@@ -225,6 +228,6 @@
         <image name="pinIcon" width="66" height="66"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dDm-NZ-edx"/>
+        <segue reference="Cu9-SO-X1f"/>
     </inferredMetricsTieBreakers>
 </document>
