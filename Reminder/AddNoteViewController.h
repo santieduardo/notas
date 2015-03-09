@@ -1,6 +1,6 @@
 //
 //  AddPersonViewController.h
-//  MySecondApp
+//  Reminder
 //
 //  Created by macmanu on 3/1/15.
 //  Copyright (c) 2015 macmanu. All rights reserved.
