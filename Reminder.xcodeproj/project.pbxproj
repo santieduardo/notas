@@ -211,10 +211,11 @@
 				TargetAttributes = {
 					1DFBDE001AA37EB300FF1B07 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = KVJ6XW4659;
+						DevelopmentTeam = 9468LRW88W;
 					};
 					1DFBDE191AA37EB300FF1B07 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 9468LRW88W;
 						TestTargetID = 1DFBDE001AA37EB300FF1B07;
 					};
 				};

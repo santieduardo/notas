@@ -21,6 +21,8 @@
     [super viewDidLoad];
     [self.navigationItem.backBarButtonItem setTitle:(@"")];
     
+    self.scrollView.contentSize=CGSizeMake(self.view.frame.size.width, self.view.frame.size.height);
+    
 //Informações para editar a nota
     
     if (self.noteToEdit != nil)

@@ -19,5 +19,6 @@
 @property BOOL pressed;
 
 @property Note *noteToEdit;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
