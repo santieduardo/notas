@@ -18,14 +18,14 @@ static NSMutableArray *array;
     if(!array){
         array = [[NSMutableArray alloc]init];
         
-        Note *n = [[Note alloc]init];
+     /*   Note *n = [[Note alloc]init];
         n.title = @"lavar roupa";
-        n.category = @"pessoal";
+        n.category = @"Pessoal";
         n.desc = @"lavar roupas escuras sem amaciante";
         n.status = YES;
         
         
-        [array addObject: n];
+        [array addObject: n];*/
     }
     return array;
 

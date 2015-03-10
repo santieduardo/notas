@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ViewController.h"
+#import "TableViewController.h"
 #import "Note.h"
 
 @interface AddNoteViewController : UIViewController
@@ -19,6 +19,8 @@
 @property BOOL pressed;
 
 @property Note *noteToEdit;
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
+
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;  //adicionando uma scroll view
 
 @end

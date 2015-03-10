@@ -10,27 +10,28 @@
 #import "NotesArraySingleton.h"
 #import "Note.h"
 
-@interface AddNoteViewController ()
-
-@end
-
 @implementation AddNoteViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.navigationItem.backBarButtonItem setTitle:(@"")];
+    [self.navigationItem.backBarButtonItem setTitle:(@"Edit")];
     
-    self.scrollView.contentSize=CGSizeMake(self.view.frame.size.width, self.view.frame.size.height);
     
-//Informações para editar a nota
+    //Informações para editar a nota
     
     if (self.noteToEdit != nil)
     {
         
         self.txtName.text = self.noteToEdit.title;
         self.descTextView.text = self.noteToEdit.desc;
-        self.statusButton.selected = self.noteToEdit.status;
+        
+        if(self.noteToEdit.status == YES)
+        {
+            [_statusButton setImage: [UIImage imageNamed:(@"pinOn")] forState: UIControlStateNormal];
+        }
+        
+        //  self.statusButton.selected = YES;//self.noteToEdit.status;
         if([self.noteToEdit.category isEqual: @"compras"])
         {
             self.categorySegmentedControl.selectedSegmentIndex = 0;
@@ -43,7 +44,7 @@
         else
         {
             self.categorySegmentedControl.selectedSegmentIndex = 2;
-        
+            
         }
     }
     
@@ -53,8 +54,8 @@
 {
     //Esconde o backButton indesejado
     
-   // [self.navigationItem setHidesBackButton:YES animated:YES];
-    //[self.navigationItem.backBarButtonItem setTintColor:[UIColor whiteColor]];
+    // [self.navigationItem setHidesBackButton:YES animated:YES];
+    [self.navigationItem.backBarButtonItem setTintColor:[UIColor whiteColor]];
     
     
 }
@@ -71,7 +72,7 @@
         note =  self.noteToEdit;
     }
     else
-    
+        
     {
         note = [[Note alloc]init];
     }
@@ -85,7 +86,7 @@
         [self.txtName becomeFirstResponder];
         
     }
-    else if ([self.descTextView.text isEqualToString:@""])
+    /*else if ([self.descTextView.text isEqualToString:@""])
     {
         UIAlertView *alert = [[UIAlertView alloc]
                               initWithTitle:@"Descrição" message:@"Você deve inserir uma descrição" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
@@ -93,7 +94,7 @@
         [alert show];
         [self.descTextView becomeFirstResponder];
         
-    }
+    }*/
     else
     {
         note.title = self.txtName.text;
@@ -125,8 +126,8 @@
         
         [self dismissViewControllerAnimated:YES completion:nil];
         [self.navigationController popViewControllerAnimated:TRUE];
+        
     }
-    
     
 }
 

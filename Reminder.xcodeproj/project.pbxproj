@@ -11,12 +11,13 @@
 		1D8C25771AA3BB650029F795 /* NotesArraySingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8C25761AA3BB650029F795 /* NotesArraySingleton.m */; };
 		1DFBDE071AA37EB300FF1B07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFBDE061AA37EB300FF1B07 /* main.m */; };
 		1DFBDE0A1AA37EB300FF1B07 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFBDE091AA37EB300FF1B07 /* AppDelegate.m */; };
-		1DFBDE0D1AA37EB300FF1B07 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFBDE0C1AA37EB300FF1B07 /* ViewController.m */; };
+		1DFBDE0D1AA37EB300FF1B07 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFBDE0C1AA37EB300FF1B07 /* TableViewController.m */; };
 		1DFBDE101AA37EB300FF1B07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DFBDE0E1AA37EB300FF1B07 /* Main.storyboard */; };
 		1DFBDE121AA37EB300FF1B07 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DFBDE111AA37EB300FF1B07 /* Images.xcassets */; };
 		1DFBDE151AA37EB300FF1B07 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DFBDE131AA37EB300FF1B07 /* LaunchScreen.xib */; };
 		1DFBDE211AA37EB300FF1B07 /* Reminder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFBDE201AA37EB300FF1B07 /* Reminder.m */; };
 		1DFBDE2C1AA383C300FF1B07 /* AddNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFBDE2B1AA383C300FF1B07 /* AddNoteViewController.m */; };
+		A0E54AB41AAF77600084B807 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0E54AB31AAF77600084B807 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +39,8 @@
 		1DFBDE061AA37EB300FF1B07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		1DFBDE081AA37EB300FF1B07 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		1DFBDE091AA37EB300FF1B07 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		1DFBDE0B1AA37EB300FF1B07 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		1DFBDE0C1AA37EB300FF1B07 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		1DFBDE0B1AA37EB300FF1B07 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TableViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		1DFBDE0C1AA37EB300FF1B07 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TableViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		1DFBDE0F1AA37EB300FF1B07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1DFBDE111AA37EB300FF1B07 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1DFBDE141AA37EB300FF1B07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		1DFBDE201AA37EB300FF1B07 /* Reminder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = Reminder.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		1DFBDE2A1AA383C300FF1B07 /* AddNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AddNoteViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		1DFBDE2B1AA383C300FF1B07 /* AddNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AddNoteViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		A0E54AB31AAF77600084B807 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		1DFBDE041AA37EB300FF1B07 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A0E54AB31AAF77600084B807 /* Info.plist */,
 				1DFBDE061AA37EB300FF1B07 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -137,8 +140,8 @@
 		C2657C191AAA2F540022EF3D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1DFBDE0B1AA37EB300FF1B07 /* ViewController.h */,
-				1DFBDE0C1AA37EB300FF1B07 /* ViewController.m */,
+				1DFBDE0B1AA37EB300FF1B07 /* TableViewController.h */,
+				1DFBDE0C1AA37EB300FF1B07 /* TableViewController.m */,
 				1DFBDE2A1AA383C300FF1B07 /* AddNoteViewController.h */,
 				1DFBDE2B1AA383C300FF1B07 /* AddNoteViewController.m */,
 			);
@@ -244,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0E54AB41AAF77600084B807 /* Info.plist in Resources */,
 				1DFBDE101AA37EB300FF1B07 /* Main.storyboard in Resources */,
 				1DFBDE151AA37EB300FF1B07 /* LaunchScreen.xib in Resources */,
 				1DFBDE121AA37EB300FF1B07 /* Images.xcassets in Resources */,
@@ -265,7 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D1F891D1AA3CAEE00F0D4DC /* Note.m in Sources */,
-				1DFBDE0D1AA37EB300FF1B07 /* ViewController.m in Sources */,
+				1DFBDE0D1AA37EB300FF1B07 /* TableViewController.m in Sources */,
 				1DFBDE0A1AA37EB300FF1B07 /* AppDelegate.m in Sources */,
 				1D8C25771AA3BB650029F795 /* NotesArraySingleton.m in Sources */,
 				1DFBDE071AA37EB300FF1B07 /* main.m in Sources */,
